@@ -11,6 +11,7 @@ import com.webservice.webserviceSpring.entities.User;
 @RequestMapping(value = "/users")
 public class UserResource {
 	
+	// ResponseEntity -- Tipo que responde a requisições Web
 	@GetMapping
 	public ResponseEntity<User> findAll() {
 		User u = new User(1L, "Marcela", "marcela@gmail.com", "99999999", "12345");
